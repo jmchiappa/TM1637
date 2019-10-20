@@ -119,11 +119,11 @@ void TM1637Display::DisplayF(float value) {
   	if(mul==0) mul=1;
   	// Do not display the LSB dot (doesn't make sense)
   	if(k==0x10) k=0;
-  	Serial.print(mul);
-  	Serial.print("\t");
-  	Serial.print(k,HEX);
-  	Serial.print("\t");
-  	Serial.println(p);
+  	// Serial.print(mul);
+  	// Serial.print("\t");
+  	// Serial.print(k,HEX);
+  	// Serial.print("\t");
+  	// Serial.println(p);
   	value*=mul;
   	// Serial.println(value);
 	showNumberDecEx((int)value, k , true);
