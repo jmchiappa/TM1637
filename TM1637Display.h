@@ -142,6 +142,13 @@ public:
   uint8_t encodeDigit(uint8_t digit);
 
   void DisplayF(float value);
+  void DisplayF(int value) { showNumberDec(value); };
+  void DisplayF(int32_t value) { showNumberDec((int)value); };
+  void DisplayF(int16_t value) { showNumberDec((int)value); };
+  void DisplayF(int8_t value) { showNumberDec((int)value); };
+  void DisplayF(uint32_t value) { showNumberDec((int)value); };
+  void DisplayF(uint16_t value) { showNumberDec((int)value); };
+  void DisplayF(uint8_t value) { showNumberDec((int)value); };
 
 protected:
    void bitDelay();
